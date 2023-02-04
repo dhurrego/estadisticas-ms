@@ -28,7 +28,8 @@ sonarqube {
         property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
         property "sonar.exclusions",
                 """**/applications/app-service/src/main/java/co/com/sofka/MainApplication.java, 
-                    **/applications/app-service/src/main/java/co/com/sofka/config/UseCasesConfig.java"""
+                    **/applications/app-service/src/main/java/co/com/sofka/config/UseCasesConfig.java,
+                    **/infrastructure/driven-adapters/mongo-repository/src/main/java/co/com/sofka/mongo/config/MongoConfig.java"""
     }
 }
 
