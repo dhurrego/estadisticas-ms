@@ -29,7 +29,8 @@ sonarqube {
         property "sonar.exclusions",
                 """**/applications/app-service/src/main/java/co/com/sofka/MainApplication.java, 
                     **/applications/app-service/src/main/java/co/com/sofka/config/UseCasesConfig.java,
-                    **/infrastructure/driven-adapters/mongo-repository/src/main/java/co/com/sofka/mongo/config/MongoConfig.java"""
+                    **/infrastructure/driven-adapters/mongo-repository/src/main/java/co/com/sofka/mongo/config/MongoConfig.java,
+                    **/infrastructure/entry-points/reactive-web/src/main/java/co/com/sofka/api/config/SwaggerConfig.java"""
     }
 }
 
