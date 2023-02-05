@@ -13,7 +13,7 @@ spec:
         app: estadisticas-ms
     spec:
       containers:
-        - image: acradminsofka.azurecr.io/estadisticas-ms:latest
+        - image: acradminsofka.azurecr.io/estadisticas-ms:#{Build.BuildId}#
           name: estadisticas-ms
           ports:
             - containerPort: 8081
