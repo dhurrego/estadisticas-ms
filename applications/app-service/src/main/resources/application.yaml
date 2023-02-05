@@ -1,14 +1,34 @@
-##Spring Configuration
 server:
-  port: 8080
+  port: 8081
+  servlet:
+    encoding:
+      charset: "UTF-8"
+      force: true
 spring:
   application:
-    name: estadisticas-ms
+    name: "estadisticas-ms"
   devtools:
     add-properties: false
-  h2:
-    console:
-      enabled: true
-      path: /h2
   profiles:
-    include:
+    include: "develop"
+  data:
+    mongodb:
+      uri: "mongodb://estadisticas-sofka:yRYCyQgS8F91FVHbZLTWzUgZkKLoJRxECHTTGHvhUhdqbKIT3zqaW8mxmUs2IBV9SdKdAPmyCKicACDbaD69dg==@estadisticas-sofka.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@estadisticas-sofka@"
+      database: "estadisticas_db"
+  jms:
+    servicebus:
+      connection-string: Endpoint=sb://sb-administracion-sofkianos.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=rJnBJoWWn/Hj43Shyw2kdffD0RJgmjTH4TzhCxTxPhI=
+      pricing-tier: standard
+      idle-timeout: 1800000
+      topic-client-id: f535fb23-3ec0-4ce7-b5d7-7ae66f65e0e1
+    cache:
+      consumers: false
+
+springdoc:
+  swagger-ui:
+    path: /swagger-doc/swagger-ui.html
+  api-docs:
+    path: /swagger-doc/v3/api-docs
+  packages-to-scan: co.com.sofka.api
+  webjars:
+    prefix: /documentacion
