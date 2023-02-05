@@ -16,7 +16,7 @@ spec:
         - image: acradminsofka.azurecr.io/estadisticas-ms:latest
           name: estadisticas-ms
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
       imagePullSecrets:
         - name: sofka.com
 ---
@@ -28,7 +28,7 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 8080
+      targetPort: 8081
   selector:
     app: estadisticas-ms
   type: LoadBalancer
