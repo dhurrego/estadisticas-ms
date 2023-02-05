@@ -30,6 +30,13 @@ y calcular la cobertura
 
 ![Cobertura](https://res.cloudinary.com/dn4mmllzs/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1675633436/sofka/Cobertura_estadisticas-ms_jagqdq.jpg)
 
+## Pruebas de rendimiento
+
+Se realizan pruebas de rendimiento a través de JMeter, con una prueba
+5000 usuarios cada 1 segundo
+
+![Jmeter](https://res.cloudinary.com/dn4mmllzs/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1675635120/sofka/Pruebas_de_rendimiento_se7mih.jpg)
+
 ## Documentación API
 
 Se crea la documentación a través de Swagger, se anexa enlace de la misma:
