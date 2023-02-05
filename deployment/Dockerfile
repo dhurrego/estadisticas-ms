@@ -8,7 +8,7 @@ RUN gradle build
 
 FROM amazoncorretto:17-alpine
 
-ARG PORT_APP=8080
+ARG PORT_APP=8081
 ENV PORT $PORT_APP
 
 EXPOSE $PORT
