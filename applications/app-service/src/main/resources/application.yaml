@@ -13,7 +13,7 @@ spring:
     include: "develop"
   data:
     mongodb:
-      uri: "mongodb://localhost:27017"
+      uri: "mongodb://estadisticas-sofka:yRYCyQgS8F91FVHbZLTWzUgZkKLoJRxECHTTGHvhUhdqbKIT3zqaW8mxmUs2IBV9SdKdAPmyCKicACDbaD69dg==@estadisticas-sofka.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@estadisticas-sofka@"
       database: "estadisticas_db"
   jms:
     servicebus:
