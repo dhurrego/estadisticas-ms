@@ -32,3 +32,7 @@ springdoc:
   packages-to-scan: co.com.sofka.api
   webjars:
     prefix: /documentacion
+
+app:
+  jwt:
+    secret: "E)H@McQfThWmZq4t7w!z%C*F-JaNdRgU"
