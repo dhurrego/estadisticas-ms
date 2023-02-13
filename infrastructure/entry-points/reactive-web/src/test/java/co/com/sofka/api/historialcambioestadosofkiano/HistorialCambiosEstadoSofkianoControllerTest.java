@@ -1,6 +1,7 @@
 package co.com.sofka.api.historialcambioestadosofkiano;
 
-import co.com.sofka.api.handler.ResponseExceptionHandler;
+import co.com.sofka.api.config.WebSecurityConfig;
+import co.com.sofka.api.handler.ReactiveExceptionHandler;
 import co.com.sofka.model.historialcambioestadosofkiano.dto.CantidadCambiosEstadoDTO;
 import co.com.sofka.usecase.historialcambioestadosofkiano.ConsultarHistorialCambiosEstadoUseCase;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.test.web.reactive.server.WebTestClient;
@@ -24,7 +26,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_PROBLEM_JSON;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        classes = {HistorialCambiosEstadoSofkianoController.class, ResponseExceptionHandler.class})
+        classes = {HistorialCambiosEstadoSofkianoController.class, ReactiveExceptionHandler.class})
+@Import(WebSecurityConfig.class)
 @AutoConfigureWebTestClient
 @EnableAutoConfiguration
 @ExtendWith(MockitoExtension.class)
