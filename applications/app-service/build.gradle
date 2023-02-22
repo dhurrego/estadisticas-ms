@@ -1,6 +1,7 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
+	implementation project( ':token-jwt')
 	implementation project( ':azure-servicebus-listener')
 	implementation project( ':reactive-web')
 	implementation project( ':mongo-repository')

@@ -18,3 +18,5 @@ include ':reactive-web'
 project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')
 include ':azure-servicebus-listener'
 project(':azure-servicebus-listener').projectDir = file('./infrastructure/entry-points/azure-servicebus-listener')
+include ':token-jwt'
+project(':token-jwt').projectDir = file('./infrastructure/helpers/token-jwt')
